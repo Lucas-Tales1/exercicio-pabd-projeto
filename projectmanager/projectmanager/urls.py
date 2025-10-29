@@ -24,8 +24,9 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 router = DefaultRouter()
-router.register(r'Projeto', views.ProjetoViewSet)
-router.register(r'Tarefa', views.TarefaViewSet)
+router.register(r'usuarios', views.UsuarioViewSet)
+router.register(r'projetos', views.ProjetoViewSet)
+router.register(r'tarefas', views.TarefaViewSet)
 
 schema_view = get_schema_view(
     openapi.Info(
