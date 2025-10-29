@@ -5,7 +5,7 @@ class Usuario(AbstractUser):
     nome = models.CharField(max_length=50)
 
 class Projeto(models.Model):
-    usuario = models.ForeingKey()
+    usuario = models.ForeingKey(Usuario)
     nome = models.CharField(max_length=50)
 
 class Tarefa(models.Model):
